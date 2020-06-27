@@ -6,6 +6,7 @@ class User {
     var username: String = ""
     var fullname: String = ""
     var email: String = ""
+    
 }
 
 class Person {
