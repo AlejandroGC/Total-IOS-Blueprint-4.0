@@ -23,6 +23,13 @@ class QMeeGame {
     func getNextQuestion() -> String {
         if currentQuestionIndex == (questions.count - 1) {
             currentQuestionIndex = 0
+        } else {
+            currentQuestionIndex += 1
         }
+        return questions[currentQuestionIndex]
+    }
+    
+    func getQuestionImageName() -> String {
+        return questionImages[currentQuestionIndex]
     }
 }
